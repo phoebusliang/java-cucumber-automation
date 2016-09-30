@@ -1,14 +1,14 @@
-Feature: This just contains four scenarios that sleeps for one second each
+Feature: xxx
 
-  This feature file just sleeps for a 4 seconds (one second each scenario)
-  It is not meant to do anything, but sleep
-  So we can prove that it runs in parallel
+  xxx
+  xxx
+  xxx
 
-  Scenario: Example 1 that sleep 1 seconds
+  Scenario: Example 2 1 scenario
     Given I have the this useless scenario "http://www.baidu.com"
     Given Close driver
 
-  Scenario: Example 2 that sleep 1 seconds
+  Scenario: Example 2 2 scenario
     Given I have the this useless scenario "http://www.sina.com"
     Given  Close driver
 
