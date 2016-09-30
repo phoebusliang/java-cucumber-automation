@@ -13,7 +13,7 @@ public class BasicOperation {
 
     WebDriver driver = null;
 
-    public BasicOperation(DesiredCapabilities capability) {
+    public BasicOperation() {
         try {
             switch (BrowserProperty.getProperty("browser")) {
                 case "chrome":
