@@ -9,8 +9,7 @@ import java.util.Properties;
 public class TestProperty {
 
 
-    private static final String propPath = System.getProperty("user.dir")
-            + File.separator + "src" + File.separator + "properties" + File.separator + "test.properties";
+    private static final String propPath = System.getProperty("user.dir") + File.separator + "src" + File.separator + "main" + File.separator + "java" + File.separator + "com" + File.separator + "zliang" + File.separator + "properties" + File.separator;
 
     /**
      * load configuration info from test.properties
@@ -19,12 +18,11 @@ public class TestProperty {
      * @return
      * @throws Exception
      */
-    public static String getProperty(String key) {
+    public static String getProperty(String props, String key) {
         Properties prop = new Properties();
         InputStream is = null;
         try {
-
-            is = new FileInputStream(propPath);
+            is = new FileInputStream(propPath + props + ".properties");
             prop.load(is);
         } catch (Exception e) {
         } finally {
